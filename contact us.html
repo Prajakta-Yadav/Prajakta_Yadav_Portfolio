@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prajakta Yadav | Portfolio</title>
+
+  <!-- Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="CSS/portfolio.css">
+
+  <style>
+     #contactUs {
+      text-align: center;
+      padding: 20px;
+      background: #1A1A1A;
+      color: white;
+      margin-top: 200px;
+      margin-bottom: 0;
+      margin-left: 0;
+     
+       border-top: 5px solid #FFB800;
+        box-shadow: 0 0 10px #FFB800, 
+                0 0 20px #FFB80077;
+    }
+
+    footer {
+    margin-left: 300px; /* space for sidebar */
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .profile-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        border-radius: 0;
+    }
+
+    main, #about, .project-grid, .contact-section, #contactUs {
+        margin-left: 0;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Prajakta Yadav</h2>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="index.html">Skills</a>
+      <a href="Projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+       <a href="Images/Prajakta_Yadav_Resume with project.pdf">Resume</a>
+    </nav>
+  </header>
+
+ <!-- LEFT FIXED PROFILE CARD -->
+<aside class="profile-sidebar">
+    <img id="profilephoto" src="Images/Profile Photo.jpeg" alt="Profile Photo">
+
+    <h2>Hello, I'm <strong>Prajakta</strong></h2>
+    <p class="role-text">Full Stack Java Developer</p>
+
+    <div class="contact-icons">
+        <a href="#" class="icon-card">📸 Instagram</a>
+        <a href="mailto:prajaktayadav2883@gmail.com" class="icon-card">📧 Email</a>
+        <a href="tel:+918788097878" class="icon-card">📱 +91 8788097878</a>
+        <a href="https://github.com/Prajakta-Yadav" target="_blank" class="icon-card">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/prajakta-yadav-a127a4219/" target="_blank" class="icon-card">🔗 LinkedIn</a>
+    </div>
+</aside>
+
+
+  <section id="contact" class="contact-section">
+     <div class="contact-container">
+  <h2>Contact Us</h2>
+
+  <div class="contact-card">
+    <form>
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" name="fname" required>
+      </div>
+
+      <div class="form-group">
+        <label>Middle Name</label>
+        <input type="text" name="mname">
+      </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" name="lname" required>
+      </div>
+
+      <div class="form-group">
+        <label>Mobile No</label>
+        <input type="text" name="mobile" required>
+      </div>
+
+      <div class="form-group">
+        <label>Address</label>
+        <textarea name="address" rows="4"></textarea>
+      </div>
+
+      <div class="button-group">
+        <button type="submit" class="btn submit-btn">Submit</button>
+        <button type="reset" class="btn reset-btn">Reset</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+
+
+  <footer id="contactUs">© 2025 Prajakta Yadav. All rights reserved.</footer>
+
+  <script src="JavaScript/portfolio.js"></script>
+
+</body>
+</html>
